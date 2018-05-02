@@ -34,6 +34,11 @@ theme_periscope <- function(
     # Plot margins
     theme(plot.margin = grid::unit(c(0.35, 0.2, 0.3, 0.35), "cm")) +
     theme(text=element_text(size=base_size*9)) +
-    theme(plot.title=element_text(color=color.title, size=25, vjust=1.25)) 
-  
+    theme(plot.title=element_text(color=color.title, size=25, vjust=1.25)) +
+    
+    theme(
+      panel.background = element_rect(fill = "transparent", colour = NA),
+      plot.background = element_rect(fill = "transparent", colour = NA),
+      legend.background = element_rect(fill = "transparent", colour = NA),
+      legend.box.background = element_rect(fill = "transparent", colour = NA))
 }
